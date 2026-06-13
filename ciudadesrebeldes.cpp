@@ -16,7 +16,6 @@ matriz<T> ciudadesrebeldes(Grafo<T>& G,vector<size_t>& ciudadestomadas, vector<c
     for(size_t i:ciudadestomadas){
         for(size_t j=0; j<copia.NumVert(); j++){
             if(i!=j){
-                copia[i][j]=Abin<T>::INFINITO;
                 copia[j][i]=Abin<T>::INFINITO;
             }
         }
